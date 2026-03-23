@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrlThr | Portfolio Développeuse de Jeux Vidéo </Video></title>
+    <style>
+        :root {
+            --bg: #0b0e14;
+            --card-bg: #161b22;
+            --accent: #58a6ff;
+            --text: #c9d1d9;
+            --text-bright: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+        header {
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        h1 { color: var(--text-bright); font-size: 2.5rem; margin-bottom: 10px; }
+        
+        .nav-links { margin-top: 20px; }
+        .nav-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            border: 1px solid #30363d;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover { background: #30363d; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img {
+            height: 180px;
+            background: #21262d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #484f58;
+            font-weight: bold;
+        }
+
+        .card-body { padding: 20px; flex-grow: 1; }
+        
+        h3 { margin-top: 0; color: var(--accent); }
+
+        .tags { margin-bottom: 15px; }
+        .tag {
+            background: #21262d;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 10px;
+            margin-right: 5px;
+            border: 1px solid #30363d;
+        }
+
+        .card-footer {
+            padding: 15px 20px;
+            border-top: 1px solid #30363d;
+            background: #1a1f26;
+        }
+
+        .card-footer a {
+            color: var(--text-bright);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        footer { text-align: center; padding: 50px; color: #8b949e; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>CrlThr</h1>
+        <p>Développeur spécialisé dans le Gameplay et les Moteurs de Jeu</p>
+        <div class="nav-links">
+            <a href="#">📄 Mon CV</a>
+            <a href="https://linkedin.com/in/ton-profil">🔗 LinkedIn</a>
+            <a href="https://github.com/CrlThr">💻 GitHub</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="grid">
+        
+        <article class="card">
+            <div class="card-img">IMAGE DU JEU</div>
+            <div class="card-body">
+                <h3>Titre du Projet 1</h3>
+                <div class="tags"><span class="tag">Unity</span><span class="tag">C#</span></div>
+                <p>Description courte de ce que tu as fait (ex: Système d'inventaire complet et IA de combat).</p>
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/CrlThr/ton-repo">📂 Code Source</a>
+            </div>
+        </article>
+
+        </div>
+</main>
+
+<footer>
+    <p>Contact : <a href="mailto:ton-email@gmail.com" style="color:var(--accent)">ton-email@gmail.com</a></p>
+    <p>© 2026 CrlThr - Fait avec passion</p>
+</footer>
+
+</body>
+</html>
