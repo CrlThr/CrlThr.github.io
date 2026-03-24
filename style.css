@@ -181,12 +181,12 @@ h3 { margin: 0 0 10px; color: var(--white); }
 
 /* --- AMBIANCE GÉNÉRALE --- */
 body {
-    background: radial-gradient(circle at center, #1a1f29 0%, #0d1117 100%);
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     background-attachment: fixed;
     overflow-x: hidden;
 }
 
-/* --- EFFET ÉTOILES ANIMÉES --- */
+/* --- EFFET ÉTOILES ANIMÉES (VERSION BOOSTÉE) --- */
 .bg-animation {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -194,25 +194,53 @@ body {
     pointer-events: none;
 }
 
-#stars, #stars2 {
-    position: absolute;
-    width: 2px; height: 2px;
-    background: white;
-    box-shadow: 10vw 20vh 1px white, 50vw 40vh 1px white, 80vw 10vh 1px white, 30vw 80vh 1px white, 90vw 70vh 1px white;
-    opacity: 0.3;
-    animation: float 50s linear infinite;
-}
-
-#stars2 {
+/* Petites étoiles - Scintillantes */
+#stars {
     width: 1px; height: 1px;
-    opacity: 0.1;
-    animation: float 100s linear infinite;
+    background: transparent;
+    /* Ici on multiplie les coordonnées pour en mettre partout */
+    box-shadow: 
+        10vw 20vh #FFF, 25vw 10vh #FFF, 45vw 35vh #FFF, 75vw 15vh #FFF, 90vw 40vh #FFF,
+        5vw 60vh #FFF, 35vw 85vh #FFF, 55vw 55vh #FFF, 80vw 90vh #FFF, 15vw 45vh #FFF,
+        65vw 75vh #FFF, 40vw 10vh #FFF, 95vw 5vh #FFF, 20vw 80vh #FFF, 50vw 25vh #FFF,
+        /* Encore plus ! */
+        12vw 12vh #FFF, 88vw 88vh #FFF, 42vw 68vh #FFF, 2vw 98vh #FFF, 66vw 22vh #FFF;
+    animation: twinkle 4s infinite ease-in-out;
 }
 
-@keyframes float {
+/* Étoiles moyennes - Mouvement lent */
+#stars2 {
+    width: 2px; height: 2px;
+    background: transparent;
+    box-shadow: 
+        15vw 25vh #FFF, 55vw 75vh #FFF, 85vw 15vh #FFF, 25vw 85vh #FFF, 
+        75vw 45vh #FFF, 45vw 5vh #FFF, 5vw 95vh #FFF, 95vw 55vh #FFF;
+    animation: moveStars 120s linear infinite;
+}
+
+/* Grosses étoiles / Éclats - Très lent */
+#stars3 {
+    width: 3px; height: 3px;
+    background: transparent;
+    box-shadow: 30vw 50vh rgba(255,255,255,0.8), 70vw 20vh rgba(255,255,255,0.8), 10vw 80vh rgba(255,255,255,0.8);
+    animation: moveStars 180s linear infinite;
+}
+
+/* --- NOUVELLES ANIMATIONS --- */
+
+/* Scintillement */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Déplacement vers le haut pour la profondeur (Parallaxe) */
+@keyframes moveStars {
     from { transform: translateY(0); }
     to { transform: translateY(-100vh); }
 }
+
+/* On garde tes effets de cartes et boutons en dessous... */
 
 /* --- EFFET SUR LES CARTES --- */
 .card {
