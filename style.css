@@ -165,6 +165,15 @@ h3 { margin: 0 0 10px; color: var(--white); }
     margin: 0 auto;
 }
 
-.slider-container {
-    overflow: hidden;
+/* On cible toutes les images à l'intérieur des wrappers de slider */
+.slider-wrapper img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Garde le format paysage */
+  object-fit: cover;    /* Remplit le cadre sans déformer */
+  display: block;       /* Évite les espaces vides sous l'image */
+}
+
+/* Optionnel : Pour tes classes spécifiques de zoom si tu veux garder le contrôle */
+.img-zoom img, .img-zoom-code img {
+  object-fit: cover; 
 }
