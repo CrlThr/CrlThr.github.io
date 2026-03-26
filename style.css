@@ -324,12 +324,11 @@ h1 {
 .project-details {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     font-size: 0.85rem;
     color: #a3aab5;
     text-align: left; /* On garde la liste à gauche pour la clarté */
-    width: 100%;
-    max-width: 250px; /* Évite que la liste soit trop large */
+    display: inline-block;
 }
 
 .project-details li {
@@ -347,4 +346,12 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     justify-content: center; /* Centre le bouton de lien */
+}
+
+footer { /* --- Copyright --- */
+    text-align: center; 
+    padding: 30px 20px; 
+    color: #8b949e; 
+    font-size: 0.9rem; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05); 
 }
