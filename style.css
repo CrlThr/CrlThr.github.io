@@ -311,3 +311,40 @@ h1 {
     0% { left: -100%; }
     100% { left: 100%; }
 }
+
+.card-content {
+    padding: 30px 25px; /* Augmente l'espace haut/bas et gauche/droite */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les titres et tags */
+    text-align: center;  /* Centre la description */
+    flex-grow: 1;
+}
+
+.project-details {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    font-size: 0.85rem;
+    color: #a3aab5;
+    text-align: left; /* On garde la liste à gauche pour la clarté */
+    width: 100%;
+    max-width: 250px; /* Évite que la liste soit trop large */
+}
+
+.project-details li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.tags {
+    margin-bottom: 15px;
+    justify-content: center; /* Centre les badges */
+}
+
+.card-footer {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center; /* Centre le bouton de lien */
+}

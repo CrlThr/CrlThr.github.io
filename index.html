@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrlThr | Portfolio Game Dev</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<div class="bg-animation">
+<body> <div class="bg-animation">
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -44,9 +45,9 @@
             <div class="skill-category">
                 <h4>Programmation</h4>
                 <ul>
-                    <li>C#, C++, HTML, CSS, Python + PYGame</li>
+                    <li>C#, C++, HTML, CSS, Python</li>
                     <li>Architecture (Clean Code)</li>
-                    <li>Unit Testing</li>
+                    <li>Unit Testing (nUnit)</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -87,7 +88,12 @@
             <div class="card-content">
                 <h3>Whiskers & Wings</h3>
                 <div class="tags"><span class="tag">Unity</span><span class="tag">Groupe</span></div>
-                <p>Jeu d'aventure. Exploration et mécaniques de vol fluides.</p>
+                <p>Jeu d'aventure focalisé sur l'exploration aérienne.</p>
+                <ul class="project-details">
+                    <li>• Physique de vol fluide et intuitive</li>
+                    <li>• Système de collectibles et progression</li>
+                    <li>• Collaboration Agile et gestion de version</li>
+                </ul>
             </div>
             <div class="card-footer"><a href="https://charatanuki.itch.io/whiskers-wings">🕹️ Jouer</a></div>
         </article>
@@ -98,54 +104,42 @@
                 <div class="slider-wrapper img-zoom">
                     <img src="img/Physic.png">
                     <img src="img/Physic2.png">
-                    <img src="img/Physic3.png">
-                    <img src="img/Physic4.png">
-                    <img src="img/Physic5.png">
                 </div>
                 <button class="slider-btn next" onclick="moveSlider('slider2', 1)">❯</button>
             </div>
             <div class="card-content">
                 <h3>Physics Game</h3>
                 <div class="tags"><span class="tag">UE5</span><span class="tag">Individuel</span></div>
-                <p>Prototype basé sur les interactions physiques et la gestion des forces.</p>
+                <p>Prototype basé sur les interactions physiques complexes.</p>
+                <ul class="project-details">
+                    <li>• Gestion dynamique des forces et gravités</li>
+                    <li>• Blueprints avancés pour l'interaction</li>
+                    <li>• Expérimentation collisions temps réel</li>
+                </ul>
             </div>
             <div class="card-footer"><a href="https://github.com/CrlThr/Physics-Game">📂 Code Source</a></div>
         </article>
 
         <article class="card">
             <div class="slider-container" id="slider3">
-                <button class="slider-btn prev" onclick="moveSlider('slider3', 1)">❮</button>
+                <button class="slider-btn prev" onclick="moveSlider('slider3', -1)">❮</button>
                 <div class="slider-wrapper">
                     <img src="img/Shaders_landscape.png">
-                    <img src="img/Exercice1Shader.png">
                     <img src="img/Shaders_eau.jpg">
-                    <img src="img/Shaders_exo2.png">
                 </div>
                 <button class="slider-btn next" onclick="moveSlider('slider3', 1)">❯</button>
             </div>
             <div class="card-content">
                 <h3>Shaders & Visuals</h3>
-                <div class="tags"><span class="tag">Shaders</span><span class="tag">Unity</span><span class="tag">Groupe</span></div>
-                <p>Recherches sur les rendus d'eau, de paysages et effets spéciaux.</p>
+                <div class="tags"><span class="tag">Shaders</span><span class="tag">Unity</span></div>
+                <p>Recherches sur les rendus visuels atmosphériques.</p>
+                <ul class="project-details">
+                    <li>• Shader d'eau (diffraction et reflets)</li>
+                    <li>• Texturation procédurale de paysages</li>
+                    <li>• Optimisation des rendus visuels</li>
+                </ul>
             </div>
             <div class="card-footer"><a href="https://github.com/CrlThr/Diorama">📂 Code Source</a></div>
-        </article>
-
-        <article class="card">
-            <div class="slider-container" id="slider4">
-                <button class="slider-btn prev" onclick="moveSlider('slider4', -1)">❮</button>
-                <div class="slider-wrapper">
-                    <img src="img/BoardGame.png">
-                    <img src="img/BoardGame2.png">
-                </div>
-                <button class="slider-btn next" onclick="moveSlider('slider4', 1)">❯</button>
-            </div>
-            <div class="card-content">
-                <h3>Party Quest</h3>
-                <div class="tags"><span class="tag">Unity</span><span class="tag">Groupe</span></div>
-                <p>Jeu de plateau multijoueur inspiré des classiques du genre.</p>
-            </div>
-            <div class="card-footer"><a href="https://github.com/Pururyn/PartyQuest">📂 Code Source</a></div>
         </article>
 
         <article class="card">
@@ -154,35 +148,20 @@
                 <div class="slider-wrapper img-zoom">
                     <img src="img/Vr.png">
                     <img src="img/Vr2.png">
-                    <img src="img/Vr3.png">
-                    <img src="img/Vr4.png">
                 </div>
                 <button class="slider-btn next" onclick="moveSlider('slider5', 1)">❯</button>
             </div>
             <div class="card-content">
                 <h3>VR Project</h3>
-                <div class="tags"><span class="tag">UE5</span><span class="tag">VR</span><span class="tag">Groupe</span></div>
-                <p>Immersion et tir à l'arc en réalité virtuelle.</p>
+                <div class="tags"><span class="tag">UE5</span><span class="tag">VR</span></div>
+                <p>Expérience d'immersion et de tir à l'arc.</p>
+                <ul class="project-details">
+                    <li>• Interactions VR avec les mains</li>
+                    <li>• Physique de tension de l'arc réaliste</li>
+                    <li>• Optimisation Frame Rate pour Meta Quest</li>
+                </ul>
             </div>
             <div class="card-footer"><a href="https://github.com/CrlThr/VRProject">📂 Code Source</a></div>
-        </article>
-
-        <article class="card">
-            <div class="slider-container" id="slider6">
-                <button class="slider-btn prev" onclick="moveSlider('slider6', -1)">❮</button>
-                <div class="slider-wrapper">
-                    <img src="img/Fnaf.png">
-                    <img src="img/Fnaf2.png">
-                    <img src="img/Fnaf3.png">
-                </div>
-                <button class="slider-btn next" onclick="moveSlider('slider6', 1)">❯</button>
-            </div>
-            <div class="card-content">
-                <h3>FNaF Fan Game</h3>
-                <div class="tags"><span class="tag">Unity</span><span class="tag">Horreur</span><span class="tag">Binôme</span></div>
-                <p>Gestion d'ambiance et mécaniques de survie.</p>
-            </div>
-            <div class="card-footer"><a href="https://github.com/CrlThr/Fnaf-Fan-Game-Project">📂 Code Source</a></div>
         </article>
 
         <article class="card">
@@ -195,83 +174,15 @@
             </div>
             <div class="card-content">
                 <h3>Map Generator</h3>
-                <div class="tags"><span class="tag">C#</span><span class="tag">Algorithme</span><span class="tag">Binôme</span></div>
-                <p>Génération de mondes procéduraux.</p>
+                <div class="tags"><span class="tag">C#</span><span class="tag">Algorithme</span></div>
+                <p>Outil de génération de terrains procéduraux.</p>
+                <ul class="project-details">
+                    <li>• Utilisation de Perlin Noise 2D</li>
+                    <li>• Biomes dynamiques selon l'altitude</li>
+                    <li>• Génération de mesh optimisée</li>
+                </ul>
             </div>
             <div class="card-footer"><a href="https://github.com/CrlThr/Map-Generator">📂 Code Source</a></div>
-        </article>
-
-        <article class="card">
-            <div class="slider-container" id="slider8">
-                <button class="slider-btn prev" onclick="moveSlider('slider8', -1)">❮</button>
-                <div class="slider-wrapper img-zoom-code">
-                    <img src="img/nUnit.png">
-                    <img src="img/nUnit2.png">
-                    <img src="img/nUnit3.png">
-                </div>
-                <button class="slider-btn next" onclick="moveSlider('slider8', 1)">❯</button>
-            </div>
-            <div class="card-content">
-                <h3>nUnitProject</h3>
-                <div class="tags"><span class="tag">C#</span><span class="tag">Architecture</span><span class="tag">Individuel</span></div>
-                <p>Tests unitaires et modularité du code.</p>
-            </div>
-            <div class="card-footer"><a href="https://github.com/CrlThr/nUnitProject">📂 Code Source</a></div>
-        </article>
-
-        <article class="card">
-            <div class="slider-container" id="slider9">
-                <button class="slider-btn prev" onclick="moveSlider('slider9', -1)">❮</button>
-                <div class="slider-wrapper img-zoom">
-                    <img src="img/Ui-UX.png">
-                    <img src="img/Ui-UX2.png">
-                    <img src="img/Ui-UX3.png">
-                </div>
-                <button class="slider-btn next" onclick="moveSlider('slider9', 1)">❯</button>
-            </div>
-            <div class="card-content">
-                <h3>Unity UI/UX</h3>
-                <div class="tags"><span class="tag">Unity</span><span class="tag">Design</span><span class="tag">Binôme</span></div>
-                <p>Interfaces dynamiques et expérience utilisateur.</p>
-            </div>
-            <div class="card-footer"><a href="https://github.com/CrlThr/Unity-UI-UX">📂 Code Source</a></div>
-        </article>
-
-        <article class="card">
-            <div class="slider-container" id="slider10">
-                <button class="slider-btn prev" onclick="moveSlider('slider10', -1)">❮</button>
-                <div class="slider-wrapper img-zoom">
-                    <img src="img/Site.png">
-                    <img src="img/Site2.png">
-                </div>
-                <button class="slider-btn next" onclick="moveSlider('slider10', 1)">❯</button>
-            </div>
-            <div class="card-content">
-                <h3>Minato</h3>
-                <div class="tags"><span class="tag">Web</span><span class="tag">Stage</span><span class="tag">Groupe</span></div>
-                <p>Développement d'un site web complet.</p>
-            </div>
-            <div class="card-footer"><a href="https://www.minatokai.org"> Visiter le site </a></div>
-        </article>
-
-        <article class="card">
-            <div class="slider-container" id="slider11">
-                <button class="slider-btn prev" onclick="moveSlider('slider11', -1)">❮</button>
-                <div class="slider-wrapper img-zoom-code">
-                    <img src="img/RG.png">
-                    <img src="img/RG2.png">
-                    <img src="img/RG3.png">
-                    <img src="img/RG4.png">
-                    <img src="img/RG5.png">
-                </div>
-                <button class="slider-btn next" onclick="moveSlider('slider11', 1)">❯</button>
-            </div>
-            <div class="card-content">
-                <h3>Persistence Data System</h3>
-                <div class="tags"><span class="tag">C#</span><span class="tag">Save System</span><span class="tag">Binôme</span></div>
-                <p>Gestion des données et sauvegardes complexes.</p>
-            </div>
-            <div class="card-footer"><a href="https://github.com/CrlThr/Persistence-Data">📂 Code Source</a></div>
         </article>
 
     </div>
