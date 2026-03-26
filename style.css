@@ -348,7 +348,7 @@ h1 {
     justify-content: center; /* Centre le bouton de lien */
 }
 
-footer { /* --- Copyright --- */
+footer { 
     text-align: center; 
     padding: 30px 20px; 
     color: #8b949e; 
