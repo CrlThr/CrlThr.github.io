@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
-<body> <div class="bg-animation">
+<body> 
+<div class="bg-animation">
     <div id="stars"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -74,7 +75,36 @@
 
 <main class="container">
     <div class="grid">
-        
+
+        <!-- NOUVELLE CARTE : Projet de Stage Comaldis HDF -->
+        <article class="card">
+            <div class="media-container" style="width: 100%; overflow: hidden; border-radius: 8px 8px 0 0;">
+                <video controls style="width: 100%; display: block;" poster="img/Comaldis_thumbnail.png">
+                    <source src="video/Comaldis_Simulation.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            <div class="card-content">
+                <h3>Simulation de Formation Comaldis</h3>
+                <div class="tags">
+                    <span class="tag">Unity</span>
+                    <span class="tag">Stage</span>
+                    <span class="tag">Binôme</span>
+                    <span class="tag">Simulation 2D/3D</span>
+                </div>
+                <p>Simulation interactive développée durant mon stage chez Comaldis HDF pour la formation et l'accueil des nouveaux arrivants.</p>
+                <ul class="project-details">
+                    <li>• Programmation globale du gameplay et de la logique interactive</li>
+                    <li>• Intégration et développement de plusieurs scènes 2D & 3D</li>
+                    <li>• Module de formation (visite interactive, mini-jeux & quiz)</li>
+                    <li>• Travail collaboratif et développement en binôme</li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <span style="color: #8b949e; font-size: 0.85rem;">💼 Projet de Stage — Comaldis HDF</span>
+            </div>
+        </article>
+
         <article class="card">
             <div class="slider-container" id="slider1">
                 <button class="slider-btn prev" onclick="moveSlider('slider1', -1)">❮</button>
@@ -111,9 +141,9 @@
                 </ul>
             </div>
             <div class="card-footer"><a href="https://github.com/CrlThr/Physics-Game">📂 Code Source</a></div>
-
         </article>
-          <article class="card">
+
+        <article class="card">
             <div class="slider-container" id="slider10">
                 <button class="slider-btn prev" onclick="moveSlider('slider10', -1)">❮</button>
                 <div class="slider-wrapper img-zoom"><img src="img/Site.png"><img src="img/Site2.png"></div>
@@ -131,7 +161,7 @@
             </div>
             <div class="card-footer"><a href="https://www.minatokai.org">🌐 Visiter le site</a></div>
         </article>
-        
+
         <article class="card">
             <div class="slider-container" id="slider3">
                 <button class="slider-btn prev" onclick="moveSlider('slider3', -1)">❮</button>
@@ -265,8 +295,6 @@
             <div class="card-footer"><a href="https://github.com/CrlThr/Unity-UI-UX">📂 Code Source</a></div>
         </article>
 
-      
-
         <article class="card">
             <div class="slider-container" id="slider11">
                 <button class="slider-btn prev" onclick="moveSlider('slider11', -1)">❮</button>
@@ -288,10 +316,11 @@
 
     </div>
 </main>
-<footer>
-        <p>© 2026 Coralie Thiery</p>
-    </footer>
 
-    <script src="script.js"></script>
+<footer>
+    <p>© 2026 Coralie Thiery</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
